@@ -1,0 +1,30 @@
+/* GUILD HEADER POPOUT */
+
+%guildHeaderPopout {
+	background-color: rgba(0, 0, 0, .7);
+	%guildHeaderPopoutItem {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;		
+		&.focused-3afm-j {
+			background-color: var(--hover-color);
+			color: #fff;
+		}
+	}
+	 %guildHeaderPopoutItemInvite {
+	    color: var(--main-color);
+	}
+	%guildHeaderPopoutItemLeave {
+	    color: rgb(240, 71, 71);
+		&%guildHeaderPopoutItemHover {
+		    background-color: var(--danger-color);
+			color: #fff;
+			%guildHeaderPopoutIcon {
+				transform: rotateY(180deg);
+				transition: all .15s ease-in-out;
+			}
+		}
+	}
+}
+
+// Right click submenu
+.submenu-2-ysNh {left: 2px;}

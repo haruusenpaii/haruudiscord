@@ -1,0 +1,52 @@
+/* SETTINGS CONTENT */
+%standardSidebarView {
+	> %settingsContentRegion {
+		background: transparent;
+	}
+}
+%settingsContentRegion {
+	%settingsContentScroller,
+	%settingsContentSidebarScroller {
+		background: transparent;
+	}
+}
+
+// Avatar uploader
+.avatarUploaderInner-3UNxY3 {
+	background-color: hsla(0, 0%, 100%, .05);
+}
+
+// Item cards
+%themeDark {
+	.card-FDVird:before {
+		background-color: hsla(0, 0%, 0%, .4);
+		border: hsla(0, 0%, 100%, .07);
+	}
+    .button-2CgfFz {
+		background-color: hsla(0, 0%, 0%, .4);
+		border: hsla(0, 0%, 100%, .07);
+		&:hover {
+			background-color: hsla(0, 0%, 0%, .7);
+			border: hsla(0, 0%, 100%, .07);
+		}
+	}
+	.card-3Qj_Yx  {
+		background-color: rgba(0, 0, 0, .4);
+		border-color: hsla(0, 0%, 100%, .07);
+		a {
+			color: var(--url-color);
+		}
+	}
+}
+// New webkit pulse
+.pulse-3KGsIm {
+	animation:none;
+}
+
+// Unsaved changes warning shake
+%shakeable[style*="transform"] {
+	transform:none !important;
+	%bg{
+		animation: cv-shake .5s ease-in;
+	}
+}
